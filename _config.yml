@@ -1,16 +1,16 @@
 permalink: /:year/:month/:day/:title/
 # this sets the style for permalinks. The date formatting (/:year/:month/:day/) will only apply to blog posts, while the pages will just show the title.
-url: syncleus.github.io baseurl: /apex
+url: syncleus.github.io
 # where you plan to publish your site
-baseurl: "/documentation-theme-jekyll"
+baseurl: "/apex"
 # any subdirectory that appears after the domain where you're publishing your site
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
-topnav_title: Jekyll Documentation Theme
+topnav_title: APEX APRS Standard
 # this appears on the top navigation bar next to the home button
-site_title: Jekyll theme for designers
+site_title: APEX APRS Standard
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
-company_name: Your company
+company_name: Syncleus
 # this appears in the footer
 github_editme_path: syncleus/apex/edit/reviews
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
