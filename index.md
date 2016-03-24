@@ -1,7 +1,7 @@
 ---
 title: Getting started
 tags: [getting_started]
-sidebar: paradigm_sidebar
+sidebar: home_sidebar
 ---
 
 
