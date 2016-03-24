@@ -11,8 +11,8 @@ entries:
     - title: Abstract
       url: /protocol/
       output: web
-    - title: APRS Shortcomings
-      url: /protocol/
+    - title: APRS Limitations
+      url: /protocol/aprs-limitations/
       output: web
     - title: APEX Goals
       url: /protocol/goals/
