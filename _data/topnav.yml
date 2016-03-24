@@ -3,6 +3,12 @@
 topnav:
 - title: Topnav
   subcategories:
+    - title: Software
+      url: /software/
+    - title: Paradigm
+      url: /paradigm/
+    - title: Protocol
+      url: /specification/
     - title: News
       url: /news/
 
