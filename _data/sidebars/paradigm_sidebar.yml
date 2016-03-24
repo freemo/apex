@@ -11,7 +11,7 @@ entries:
     - title: Reasoning
       url: /paradigm/
       output: web
-    - title: Path
+    - title: Path Selection
       url: /paradigm/path/
       output: web
     - title: Beacon
