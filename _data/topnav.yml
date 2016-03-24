@@ -9,8 +9,6 @@ topnav:
       url: /paradigm/
     - title: Protocol
       url: /specification/
-    - title: News
-      url: /news/
 
 #Topnav dropdowns
 topnav_dropdowns:
