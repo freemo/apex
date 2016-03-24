@@ -5,19 +5,22 @@ entries:
   levels: one
   subcategories:
 
-  - title: Broadcasting
+  - title: Setup
     output: web
     items:
-    - title: Path
-      url: /paradigm/path/
+    - title: Getting Started
+      url: /software/
       output: web
-    - title: Beacon
-      url: /paradigm/beacon/
+    - title: Download
+      url: /software/download/
       output: web
-    - title: ID Broadcast
-      url: /paradigm/id/
+    - title: Install
+      url: /software/install/
       output: web
-    - title: Status Broadcast
-      url: /paradigm/status/
+    - title: Configuring
+      url: /software/configure/
+      output: web
+    - title: Running
+      url: /software/run/
       output: web
 

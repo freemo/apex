@@ -5,19 +5,31 @@ entries:
   levels: one
   subcategories:
 
-  - title: Broadcasting
+  - title: Introduction
     output: web
     items:
-    - title: Path
-      url: /paradigm/path/
+    - title: Abstract
+      url: /protocol/
       output: web
-    - title: Beacon
-      url: /paradigm/beacon/
+    - title: APRS Shortcomings
+      url: /protocol/
       output: web
-    - title: ID Broadcast
-      url: /paradigm/id/
+    - title: APEX Goals
+      url: /protocol/goals/
       output: web
-    - title: Status Broadcast
-      url: /paradigm/status/
+  - title: Routing
+    output: web
+    items:
+    - title: Cross-band Digipeating
+      url: /protocol/cross-band/
+      output: web
+    - title: Preemptive Routing
+      url: /protocol/preemptive/
+      output: web
+    - title: Regional Path
+      url: /protocol/regional/
+      output: web
+    - title: Geographic Routing
+      url: /protocol/geographic/
       output: web
 

@@ -8,6 +8,9 @@ entries:
   - title: Broadcasting
     output: web
     items:
+    - title: Reasoning
+      url: /paradigm/
+      output: web
     - title: Path
       url: /paradigm/path/
       output: web
