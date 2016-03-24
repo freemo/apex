@@ -8,7 +8,7 @@ topnav:
     - title: Paradigm
       url: /paradigm/
     - title: Protocol
-      url: /specification/
+      url: /protocol/
 
 #Topnav dropdowns
 #topnav_dropdowns:
