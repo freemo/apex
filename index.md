@@ -18,7 +18,8 @@ APEX capable stations would be able to make full use of the information in an
 APEX packet.
 
 The software for the project can currently be found at the
-[APEX GitHub page](https://github.com/Syncleus/apex).
+[APEX GitHub page](https://github.com/Syncleus/apex) or go to the
+[APEX download page](http://apexprotocol.com/software/download/).
 
 # Why something new?
 
