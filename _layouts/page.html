@@ -24,6 +24,25 @@ layout: default
     {% endif %}
 
     {% endunless %}
+  {% if page.status == "RFC" %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" id="rfc-alert">
+          <a class="noCrossRef accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false">This page represents a standard currently in RFC status (click for more information).</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse noCrossRef collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          The information on this page is a proposed standard and subject to change. While in RFC status it is open to anyone in the community to provide input and improvements to the standard. Once the community has reached a consensus the APEX Standards board will update its status to accepted
+          and this warning will be removed.
+          {% if page.rfclink %}
+          <br />
+          If you would like to contribute to the RFC and get your voice heard the dicussion takes place on <a href="https://www.reddit.com/r/ApexProtocol/">reddit</a> at <a href="{{ page.rfclink }}">the following link</a>.
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
 
   {{content}}
 

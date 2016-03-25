@@ -4,6 +4,8 @@ sidebar: protocol_sidebar
 keywords: news, blog, updates, release notes, announcements
 permalink: /protocol/cross-band/
 toc: false
+status: RFC
+rfclink: https://www.reddit.com/r/ApexProtocol/comments/4byrdm/crossband_repeating_rfc/
 ---
 
 In order to facilitate cross-band routing the APEX protocol defines several
