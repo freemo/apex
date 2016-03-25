@@ -23,4 +23,4 @@ get it up and running.
 Below is a screenshot showing it digipeating packets as they come in across two
 TNCs. 
 
-![Screen shot of APEX application.](/images/screenshot1.png)
+[![Screen shot of APEX application.](/images/screenshot1.png)](/images/screenshot1.png)
