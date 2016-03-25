@@ -4,9 +4,10 @@ tags: [basics]
 sidebar: home_sidebar
 ---
 
-APEX stands for "**AP**rs **EX**tended"; It will be a new protocol which
-expands on and fixes most of the issues in the older APRS protocol while
-still remaining backwards compatible.
+APEX stands for "**AP**rs **EX**tended"; It's a new protocol which
+enhances the older APRS protocol and attempts to deliver on many of the
+features the original APRS promised to deliver one day. All while
+still remaining backwards compatible with older APRS nodes.
 
 APEX defines both a new protocol and a new paradigm. Since much of the new
 protocol will not run on existing hardware APEX also includes a Python
