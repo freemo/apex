@@ -11,8 +11,8 @@ entries:
     - title: Home
       url: /
       output: web
-    - title: Board of Standards
-      url: /board-of-standards/
+    - title: Standards Board
+      url: /standards-board/
       output: web
     - title: Approval Process
       url: /approval-process/
