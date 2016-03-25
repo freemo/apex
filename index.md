@@ -49,8 +49,8 @@ bands; APEX will prioritize HF traffic between short-distance bands such as
 
 In the end we hope to provide a standard which supports the current APRS
 network and paradigm while still expanding it and improving it to make
-the network more resiliant to emergency and more useful during normal
-operation as well.
+the network more resiliant for emergency use as well as during normal
+operation.
 
 # Goals
 
