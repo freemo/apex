@@ -1,17 +1,28 @@
 ---
 title: APEX
-tags: [getting_started]
+tags: [basics]
 sidebar: home_sidebar
 ---
-The APEX Protocol relies on some peers, preferably most, run the APEX paradigm.
-While the old APRS Paradigm can be used, which in fact is very similar and
-backwards compatible with the APEX Paradigm, it will reduce the functionality
-provided by the APEX network.
 
-# Why a new Paradigm?
+APEX stands for "**AP**rs **EX**tended"; It will be a new protocol which
+expands on and fixes most of the issues in the older APRS protocol while
+still remaining backwards compatible.
+
+APEX defines both a new protocol and a new paradigm. Since much of the new
+protocol will not run on existing hardware APEX also includes a Python
+reference implementation that will provide a full APEX application out of
+the box. Since APEX is backwards compatible with APRS it can fully utilize
+existing APRS hardware to route APEX packets across the network. Though only
+APEX capable stations would be able to make full use of the information in an
+APEX packet.
+
+The software for the project can currently be found at the
+[APEX GitHub page](https://github.com/Syncleus/apex).
+
+# Why something new?
 
 The APRS network relies heavily on internet connectivity. The only way you can
-get a packet to its intended destination, without a nearby connection, is to
+get a packet to a distant destination, whwn local internet is down, is to
 get the packet to a station with an internet gateway. This opens the APRS
 network up to all sorts of vulnerability in a disaster scenario where area
 wide internet access may be lost.
@@ -24,15 +35,15 @@ emergency even legacy APRS devices can benefit from the APEX paradigm by
 being able to get emergency messages out across HF channels efficiently.
 
 Part of the effort is to bring the United States up to date with Europe's
-infrastructure as well as standardized across the two as much as possible.
-Across europe there is a multi-band Robust Packet Radio and APRS network
-in place across 4 HF networks and one or more VHF networks. The european
-system also includes a backbone of repeaters with standardized digipeating
-configurations.
+infrastructure as well as produce an internation standards for global
+radio networks. Across europe there is a multi-band Robust Packet Radio
+and APRS network in place across 4 HF networks and one or more VHF networks.
+The european system also includes a backbone of repeaters with standardized
+digipeating configurations.
 
-By having multiple HF networks, and paths that can cross between them,
-we can prioritize HF traffic between short-distance bands such as
-160m or 80m, or long distance traffic on 30m.
+APEX allows for multiple HF networks, and paths that can cross between the
+bands; APEX will prioritize HF traffic between short-distance bands such as
+160m or 80m, or long distance traffic on 30m dynamically.
 
 In the end we hope to provide a standard which supports the current APRS
 network and paradigm while still expanding it and improving it to make
