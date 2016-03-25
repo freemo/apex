@@ -4,6 +4,8 @@ sidebar: protocol_sidebar
 keywords: news, blog, updates, release notes, announcements
 permalink: /protocol/preemptive/
 toc: false
+status: RFC
+rfclink: https://www.reddit.com/r/ApexProtocol/comments/4byxl3/preemptive_routing_rfc/
 ---
 
 Preemptive routing is unique to APEX and also made it into the initial release
