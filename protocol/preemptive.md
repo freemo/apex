@@ -1,7 +1,8 @@
 ---
 title: Preemptive Routing
 sidebar: protocol_sidebar
-keywords: news, blog, updates, release notes, announcements
+keywords: RFC
+tags: [RFC]
 permalink: /protocol/preemptive/
 toc: false
 status: RFC
