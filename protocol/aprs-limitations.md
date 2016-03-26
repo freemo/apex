@@ -13,3 +13,4 @@ toc: false
 * No geographic routing, you must know an explicit path to your destination or use WIDE.
 * Packets are naively repeated, no rate limiting mechenisms other than max distance.
 * No automatic response to misbehaving stations, which can take down an entire local network.
+* No means to prevent packets from gating to the intenet, making it difficult to simulate disaster scenarios.
