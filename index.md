@@ -22,11 +22,12 @@ The software for the project can currently be found at the
 
 # Why something new?
 
-The APRS network relies heavily on internet connectivity. The only way you can
-get a packet to a distant destination, whwn local internet is down, is to
-get the packet to a station with an internet gateway. This opens the APRS
-network up to all sorts of vulnerability in a disaster scenario where area
-wide internet access may be lost.
+The older APRS network relies heavily on internet connectivity. The only way
+you can get a packet to a distant destination, when local internet is down, is
+to get the packet to a station with an internet gateway. Older APRS packets are
+incapable of being routed long distances without the use of internet gateways.
+This opens the APRS network up to all sorts of vulnerability in a disaster
+scenario where area wide internet access may be lost.
 
 One way APEX addresses this is by providing path aliases that are capable
 of cross-band repeating, combined with a mechanism for identifying which
@@ -36,18 +37,21 @@ emergency even legacy APRS devices can benefit from the APEX paradigm by
 being able to get emergency messages out across HF channels efficiently.
 
 Part of the effort is to bring the United States up to date with Europe's
-infrastructure as well as produce an internation standards for global
-radio networks. Across europe there is a multi-band Robust Packet Radio
-and APRS network in place across 4 HF networks and one or more VHF networks.
+infrastructure as well as produce an international standard for global
+radio networks. Across Europe there is a multi-band Robust Packet Radio
+and APRS network in place across 4 HF bands and one or more VHF/UHF bands.
 The european system also includes a backbone of repeaters with standardized
-digipeating configurations.
+digipeating configurations. However the same multi-band coverage has yet to
+be seen consistently across the USA.
 
-APEX allows for multiple HF networks, and paths that can cross between the
-bands; APEX will prioritize HF traffic between short-distance bands such as
-160m or 80m, or long distance traffic on 30m dynamically.
+APEX allows for multiple HF networks, and allows for paths that can cross
+between them; APEX will prioritize short-distance traffic over HF bands such
+as 160m or 80m, as well as long distance traffic over 30m dynamically. Of
+course the original transmitter of the packet may also explicitly specify
+the desired bands to use in the packet's path.
 
 In the end we hope to provide a standard which supports the current APRS
-network and paradigm while still expanding it and improving it to make
+network and paradigm while still expanding and improving it to make
 the network more resiliant for emergency use as well as during normal
 operation.
 
@@ -56,16 +60,16 @@ operation.
 It is important that we build APEX from the lessons we learned from APRS.
 This means where possible we will use existing standards, or try to
 resolve any differences between regional standards. Any standards
-introduced mest be considerate of, and backwards compatible to the
+introduced must be considerate of, and backwards compatible to, the
 existing networks.
 
 The final network envisioned, once APEX reaches pervasive coverage,
 would be an efficient, self-reflective network. Stations would announce
 its cross-port capabilities and wide path packets will be rate limited
-to reduce congestion on a particular network. Of course most of this will
-require adoption of the APEX Protocol, not just the paradigm. The APEX
-reference implementation can be used as a full stack reference
-implementation; it is a python application, fully configuration, and
-ready to be run on a digipeater station capable of interfacing with any
-number of TNC across any number of bands.
+to reduce congestion.
+
+The APEX reference implementation can be used as a full stack reference
+implementation; it is a fully functional Python 3 application, completely
+configurable, and ready to be run as a digipeater station capable of
+interfacing with any number of TNC across any number of bands.
 
