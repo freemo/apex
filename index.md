@@ -1,6 +1,5 @@
 ---
 title: APEX
-tags: [basics]
 sidebar: home_sidebar
 ---
 
