@@ -8,7 +8,7 @@ entries:
   - title: Introduction
     output: web
     items:
-    - title: Abstract
+    - title: Overview
       url: /protocol/
       output: web
     - title: APRS Limitations
