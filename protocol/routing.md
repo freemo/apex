@@ -1,7 +1,6 @@
 ---
 title: Routing
 sidebar: protocol_sidebar
-keywords: news, blog, updates, release notes, announcements
 permalink: /protocol/routing/
 toc: false
 ---

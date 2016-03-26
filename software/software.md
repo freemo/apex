@@ -1,7 +1,6 @@
 ---
 title: APEX Application
 sidebar: software_sidebar
-keywords: news, blog, updates, release notes, announcements
 permalink: /software/
 toc: false
 ---
