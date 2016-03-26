@@ -8,7 +8,7 @@ entries:
   - title: Broadcasting
     output: web
     items:
-    - title: Reasoning
+    - title: Overview
       url: /paradigm/
       output: web
     - title: Path Selection
