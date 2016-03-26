@@ -14,9 +14,9 @@ entries:
     - title: Download
       url: /software/download/
       output: web
-    - title: Install
-      url: /software/install/
-      output: web
+#    - title: Install
+#      url: /software/install/
+#      output: web
     - title: Configuring
       url: /software/configure/
       output: web
