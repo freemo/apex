@@ -5,9 +5,8 @@ permalink: /contact/
 toc: false
 ---
 
-Content coming soon!
+If you wish to reach the APEX team, or contribute to the discussion within the community at large, below are a few useful links. Please keep in mind the primary location for discussion regarding standards approval is in the APEX Subreddit. The mailing list is provided for ham's and is actively monitored by the core team, but the subreddit is the preffered forumn.
 
-Some links:
+APEX Subreddit: [/r/ApexProtocol](https://www.reddit.com/r/ApexProtocol/)
 
-[SPEX Subreddit](https://www.reddit.com/r/ApexProtocol/)
-[APEX Mailing list](http://groups.google.com/group/apex-protocol)
+APEX Mailing list: [APEX Google Groups Page](http://groups.google.com/group/apex-protocol)
