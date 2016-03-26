@@ -1,7 +1,8 @@
 ---
 title: Cross-band Routing
 sidebar: protocol_sidebar
-keywords: news, blog, updates, release notes, announcements
+keywords: RFC
+tags: [RFC]
 permalink: /protocol/cross-band/
 toc: false
 status: RFC
