@@ -2,7 +2,7 @@
 title: Cross-band Routing
 sidebar: protocol_sidebar
 keywords: RFC
-tags: [RFC]
+tags: [rfc]
 permalink: /protocol/cross-band/
 toc: false
 status: RFC

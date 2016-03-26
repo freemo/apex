@@ -2,7 +2,7 @@
 title: Preemptive Routing
 sidebar: protocol_sidebar
 keywords: RFC
-tags: [RFC]
+tags: [rfc]
 permalink: /protocol/preemptive/
 toc: false
 status: RFC
