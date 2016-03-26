@@ -14,9 +14,6 @@ entries:
     - title: APRS Limitations
       url: /protocol/aprs-limitations/
       output: web
-    - title: APEX Goals
-      url: /protocol/goals/
-      output: web
   - title: Routing
     output: web
     items:
@@ -29,7 +26,7 @@ entries:
     - title: Regional Path
       url: /protocol/regional/
       output: web
-    - title: Geographic Routing
-      url: /protocol/geographic/
-      output: web
+#    - title: Geographic Routing
+#      url: /protocol/geographic/
+#      output: web
 
