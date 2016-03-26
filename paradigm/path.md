@@ -7,7 +7,7 @@ toc: false
 
 For the time being path recomendations are the same as the most prevelant paradigms in Europe and the USA. The paradigm depends somewhat on the station's characteristics, and intended use.
 
-Typically digipeaters will repeat their own callsign and ssid combination, if they are cross-band digipeaters then it will respond also to the callsign and ssid of the ports with chich it can cross-band repeat to. It is prefered, when possible, to choose a path that prefers station identifiers directly rather than wide area aliases liek WIDEN-n.
+Typically digipeaters will repeat their own callsign and ssid combination, if they are cross-band digipeaters then it will respond also to the callsign and ssid of the ports with which it can cross-band repeat to. It is prefered, when possible, to choose a path that prefers station identifiers specifically (explicit pathing) rather than wide area aliases like WIDEN-n.
 
 # VHF and above
 
