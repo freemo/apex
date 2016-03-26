@@ -1,6 +1,8 @@
 ---
 title: Regional Paths
 sidebar: protocol_sidebar
+keywords: RFC
+tags: [rfc]
 status: RFC
 rfclink: https://www.reddit.com/r/ApexProtocol/comments/4bzike/regional_path_aliases_rfc/
 permalink: /protocol/regional/
