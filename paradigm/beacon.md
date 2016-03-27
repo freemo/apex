@@ -46,10 +46,11 @@ APEX beacons should always include the PHG designator even for mobile stations. 
      and find that the average elevation is 1200 feet, then your
      height-above-averag-terain is less than ZERO!!!!
 
-Obviously for a mobile station some of the fields, such as height omni, are usually 0.
+Obviously for a mobile station some of the fields, such as height omni, are usually 0. also the WIDE parameter is no longer used in the current specification and instead this is where the comment goes. So the current APRS and APEX format for beacons looks more like this:
 
-The standard also dictates the content of the identifying comments, which are no longer free form. The current suggestion is
-to follow the European standard, with some small modifications. The European standard has the following beacon comment format.
+    !DDMM.mmN/DDDMM.mmW#PHG5360/...(beacon comment)...
+
+The standard also dictates the content of the beacon comment, which is no longer customizable (instead users can use the status packet for that). The current suggestion is to follow the European standard, with some small modifications. The European standard has the following beacon comment format.
 
     G/D R-I-R 24H
     
