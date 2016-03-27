@@ -74,9 +74,9 @@ The various fields are defined in the European standard as follows
     HX variable times / on request
     HN night times 
     
-The additions to the european standard defined by APEX includes a connectivity of "I-R" to specify stations which will port internet packets over the radio but will not gate traffic into the internet. It also adds an additional field at the end in the form of C## which specifies the rate at which packets were received since the last beacon was sent out. The rate is in average packets per minute. This information is used to assist the APEX routing algorithms to automatically route packets around areas of high congestion.
+The additions to the european standard defined by APEX includes a connectivity of "I-R" to specify stations which will port internet packets over the radio but will not gate traffic into the internet. It also adds an additional field to the end of the comment having the form C## where ## specifies the rate at which packets were received since the last beacon was sent out. The rate is specified as average packets per minute. This information is used to assist the APEX routing algorithms to automatically route packets around areas of high congestion.
 
-The new APEX standard for the beacon comment would, therefore, be the following.
+The APEX standard for the beacon comment would, therefore, be the following.
 
     Beacon Comment – Service Code
     
@@ -100,11 +100,11 @@ The new APEX standard for the beacon comment would, therefore, be the following.
     ----congestion level----
     C## congestion level, ## is aveage packets per minute
     
-Therefore the beacon comment on an APEX compliant beacon packet looks like the following
+According to the APEX standard the beacon comment on an APEX compliant beacon packet would looks like the following
 
     G/D R-I-R H24 C30
     
-The following is an examples of a complete compliant APEX beacon including PHG specifier and coordinates:
+The following is an example of a complete, compliant, APEX beacon including PHG specifier and coordinates:
 
     !/:=i@;N.G& --PHG5360/WIDE G/D R-I-R H24 C30
     
