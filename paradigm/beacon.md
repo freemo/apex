@@ -50,7 +50,7 @@ Obviously for a mobile station some of the fields, such as height omni, are usua
 
 The resulting beacon format now looks something like this:
 
-    ...................#PHG5360/WIDE~23...(identifying comments)...
+    !..................#PHG5360/WIDE~23...(identifying comments)...
                        | | ||||  |  | |__ avg. packets received per minute
                        | | ||||  |  |____ apex specific seperator
                        | | ||||  |_______ makes station show up green
