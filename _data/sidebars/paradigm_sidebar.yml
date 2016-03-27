@@ -11,6 +11,10 @@ entries:
     - title: Overview
       url: /paradigm/
       output: web
+    - title: Callsign SSID
+      url: /paradigm/ssid/
+      output: web
+    - title: Beacon
     - title: Path Selection
       url: /paradigm/path/
       output: web
