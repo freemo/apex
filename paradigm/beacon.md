@@ -51,15 +51,15 @@ Obviously for a mobile station some of the fields, such as height omni, are usua
 The resulting beacon format now looks something like this:
 
     !DDMM.mmN/DDDMM.mmW#PHG5360/WIDE~23...(identifying comments)...
-      |         |      | | ||||  |  ||_ avg. packets received per minute
-      |         |      | | ||||  |  |__ apex specific seperator
-      |         |      | | ||||  |_____ makes station show up green
-      |         |      | | ||||________ Omni (Direction of max gain)
-      |         |      | | |||_________ Ant gain in dB
-      |         |      | | ||__________ Height = log2(HAAT/10)
-     LAT      LONG     | | |___________ Power = SQR(P)
-                       | |_____________ Power-Height-Gain identifier *
-                       |_______________ # is symbol for digipeater
+      |         |      | | ||||  |  | |__ avg. packets received per minute
+      |         |      | | ||||  |  |____ apex specific seperator
+      |         |      | | ||||  |_______ makes station show up green
+      |         |      | | ||||__________ Omni (Direction of max gain)
+      |         |      | | |||___________ Ant gain in dB
+      |         |      | | ||____________ Height = log2(HAAT/10)
+     LAT      LONG     | | |_____________ Power = SQR(P)
+                       | |_______________ Power-Height-Gain identifier *
+                       |_________________ # is symbol for digipeater
 
 The standard also dictates the content of the identifying comments, which are no longer free form. The current suggestion is
 to follow the European standard. The European standard has the following beacon comment format.
