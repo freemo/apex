@@ -40,7 +40,7 @@ Part of the effort is to bring the United States up to date with Europe's
 infrastructure as well as produce an international standard for global
 radio networks. Across Europe there is a multi-band Robust Packet Radio
 and APRS network in place across 4 HF bands and one or more VHF/UHF bands.
-The european system also includes a backbone of repeaters with standardized
+The European system also includes a backbone of repeaters with standardized
 digipeating configurations. However the same multi-band coverage has yet to
 be seen consistently across the USA.
 
@@ -52,7 +52,7 @@ the desired bands to use in the packet's path.
 
 In the end we hope to provide a standard which supports the current APRS
 network and paradigm while still expanding and improving it to make
-the network more resiliant for emergency use as well as during normal
+the network more resilient for emergency use as well as during normal
 operation.
 
 # Goals
