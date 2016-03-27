@@ -11,6 +11,9 @@ entries:
     - title: Home
       url: /
       output: web
+    - title: Roadmap
+      url: /roadmap/
+      output: web
     - title: Standards Board
       url: /standards-board/
       output: web
