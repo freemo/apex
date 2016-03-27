@@ -50,14 +50,14 @@ Obviously for a mobile station some of the fields, such as height omni, are usua
 
 The resulting beacon format now looks something like this:
 
-    !DDMM.mmN/DDDMM.mmW#PHG5360/WIDE~23...(identifying comments)...
-      |         |      | | ||||  |  | |__ avg. packets received per minute
-      |         |      | | ||||  |  |____ apex specific seperator
-      |         |      | | ||||  |_______ makes station show up green
-      |         |      | | ||||__________ Omni (Direction of max gain)
-      |         |      | | |||___________ Ant gain in dB
-      |         |      | | ||____________ Height = log2(HAAT/10)
-     LAT      LONG     | | |_____________ Power = SQR(P)
+    ...................#PHG5360/WIDE~23...(identifying comments)...
+                       | | ||||  |  | |__ avg. packets received per minute
+                       | | ||||  |  |____ apex specific seperator
+                       | | ||||  |_______ makes station show up green
+                       | | ||||__________ Omni (Direction of max gain)
+                       | | |||___________ Ant gain in dB
+                       | | ||____________ Height = log2(HAAT/10)
+                       | | |_____________ Power = SQR(P)
                        | |_______________ Power-Height-Gain identifier *
                        |_________________ # is symbol for digipeater
 
