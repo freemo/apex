@@ -5,7 +5,7 @@ permalink: /paradigm/beacon/
 toc: false
 ---
 
-APEX Beacons follow the same format as an APRS beacon but with a few additions. A beacon packet ban be identified because its AX.25 "TO" field will be set to "APRS". First off, the position is prefered to be encoded using mic-e compression, however it may be encoded as plain text as well. APEX clients must always natively interprit both plain text and mic-e but may transmit either.
+APEX Beacons follow the same format as an APRS beacon but with a few additions. A beacon packet ban be identified because its AX.25 "TO" field will be set to "APRS", and the first character of the payload which varies depending on the specific type of beacon packet; details can be found in the [APRS specification](http://www.aprs.org/doc/APRS101.PDF). First off, the position is prefered to be encoded using mic-e compression, however it may be encoded as plain text as well. APEX clients must always natively interprit both plain text and mic-e but may transmit either.
 
 APEX beacons should always include the PHG designator even for mobile stations. This is critical for APEX to calculate packet routing so if it is ommited the packet will not be considered APEX compliant. The PHG specification was documented in the original APRS specification as the following.
 
