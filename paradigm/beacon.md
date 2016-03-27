@@ -107,6 +107,6 @@ According to the APEX standard the beacon comment on an APEX compliant beacon pa
     
 The following is an example of a complete, compliant, APEX beacon including PHG specifier and coordinates:
 
-    !/:=i@;N.G& --PHG5360/WIDE G/D R-I-R H24 C30
+    !/:=i@;N.G& --PHG5360/G/D R-I-R H24 C30
     
 **NOTE:** The beacon on every port of a TNC should always be the same.
