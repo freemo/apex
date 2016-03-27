@@ -64,3 +64,32 @@ Alias   | Frequency Range
 60M     | 5.3 Mhz - 5.5 Mhz
 80M     | 3.5 Mhz - 4 Mhz
 160M    | 1.5 Mhz - 2 Mhz
+
+# Specific Frequency Cross-band Aliases
+
+The following table gives the current frequency-specific cross-band aliases. This list is constantly growing and will be added to anytime we learn of a new local frequency utilizing APRS or APEX protocols.
+
+Alias   | Frequency          | Modulation 
+--------|--------------------|---------------------
+2M1     | 144.39 Mhz  (spot) | FM
+2M2     | 144.8 Mhz   (spot) | FM
+2M3     | 144.525 Mhz (spot) | FM
+2M4     | 144.62 Mhz  (spot) | FM
+2M5     | 144.54 Mhz  (spot) | FM
+2M6     | 144.66 Mhz  (spot) | FM
+2M7     | 144.93 Mhz  (spot) | FM
+2M8     | 145.01 Mhz  (spot) | FM
+2M9     | 145.175 Mhz (spot) | FM
+2M10    | 145.525 Mhz (spot) | FM
+2M11    | 145.575 Mhz (spot) | FM
+20M1    | 14.1033 Mhz (USB)  | Robust Packet Radio
+20M2    | 14.0963 Mhz (USB)  | Robust Packet Radio
+20M3    | 14.1046 Mhz (spot) | FSK
+20M4    | 14.0982 Mhz (spot) | FSK
+30M1    | 10.1473 Mhz (USB)  | Robust Packet Radio
+30M2    | 10.1492 Mhz (spot) | FSK
+40M1    | 7.0473 Mhz  (USB)  | Robust Packet Radio
+40M2    | 7.0363 Mhz  (USB)  | Robust Packet Radio
+40M3    | 7.0492 Mhz  (spot) | FSK
+40M4    | 7.0376 Mhz  (spot) | FSK
+80M1    | 3.610 Mhz   (USB)  | Robust Packet Radio
