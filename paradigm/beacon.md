@@ -40,7 +40,7 @@ APEX beacons should always include the PHG designator even for mobile stations. 
      even though an OMNI antenna is at the site.  Note that 0 means
      OMNI and 8 means 360 or a NORTH offset.
 
-     HIGHTS are ABOVE-AVERAGE TERRAIN!  Not above ground or sea
+     HEIGHTS are ABOVE-AVERAGE TERRAIN!  Not above ground or sea
      level.  Your antenna may be at 1000 ft above sealevel and be on 
      a 100 foot tower.  But if you go out 10 miles in all directions
      and find that the average elevation is 1200 feet, then your
