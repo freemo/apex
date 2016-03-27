@@ -39,3 +39,28 @@ Notice the last hop is just 2M with no number suffix. This is because we just
 want it to gate into 2M network and don't care which frequency on that band it
 is gating into. As a side note the GATE specifier would actually perform the
 same function as the 2M specifier.
+
+Finally, when the first digit of alias is a 0 then the numbers in the first group are considered to be in centimeters rather than meters. Therefore while 30M represents the 30 meter band 033M represents the 33 centimeter band.
+
+# Generic Cross-band Aliases
+
+The following generic cross-band aliases allow for cross band operation to specific bands, rather then an explicit frequency within them. This is useful for global operation where the local frequency used may differ from region to region.
+
+Alias   | Band 
+--------|----------
+023M    | 1240 Mhz - 1300 Mhz
+033M    | 900 Mhz - 930 Mhz
+070M    | 420 Mhz - 450 Mhz
+1M      | 150 Mhz - 300 Mhz
+2M      | 100 Mhz - 150 Mhz
+6M      | 50 Mhz - 55 Mhz
+10M     | 28 Mhz - 30 Mhz
+12M     | 24 Mhz - 25 Mhz
+15M     | 21 Mhz - 22 Mhz
+17M     | 18 Mhz - 19 Mhz
+20M     | 14 Mhz - 15 Mhz
+30M     | 10 Mhz - 11 Mhz
+40M     | 7 Mhz - 7.3 Mhz
+60M     | 5.3 Mhz - 5.5 Mhz
+80M     | 3.5 Mhz - 4 Mhz
+160M    | 1.5 Mhz - 2 Mhz
