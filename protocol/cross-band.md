@@ -17,7 +17,7 @@ old paradigm. However the new band-specific designators will have a form of
 numbers specifies the band ID, while the second group of numbers is the net
 ID and is optional. In this way the designator 30M would represent the 30
 meter band as a whole (specifically any nets on that band the station is
-capable of). When 30M is specified in a path, a station will digipeat that
+capable of). When 30M is specified in a path, a station will repeat that
 packet out on any port which is tuned to the 30M band. Similarly 30M1 would
 specify a frequency (net) that resides within the 30M band. The list of
 identifiers for the various nets will be updated periodically as new nets show
@@ -30,7 +30,7 @@ complete list would have to be compiled.
 Using these new designators in a path would be relatively straight forward. If,
 for example, you wanted a packet to take one hop, then move over to the 30
 meter Robust Packet Radio channel, then move back to ordinary VHF for its last
-hop, and you dont care what the specific frequency on that hop, then you would
+hop, and you do not care what the specific frequency on that hop, then you would
 construct your path as follows:
 
     WIDE1-1,30M2,2M
@@ -39,4 +39,3 @@ Notice the last hop is just 2M with no number suffix. This is because we just
 want it to gate into 2M network and don't care which frequency on that band it
 is gating into. As a side note the GATE specifier would actually perform the
 same function as the 2M specifier.
-
