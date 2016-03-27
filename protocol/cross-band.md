@@ -46,7 +46,7 @@ Finally, when the first digit of alias is a 0 then the numbers in the first grou
 
 The following generic cross-band aliases allow for cross band operation to specific bands, rather then an explicit frequency within them. This is useful for global operation where the local frequency used may differ from region to region.
 
-Alias   | Band 
+Alias   | Frequency Range 
 --------|----------
 023M    | 1240 Mhz - 1300 Mhz
 033M    | 900 Mhz - 930 Mhz
