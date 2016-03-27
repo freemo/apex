@@ -69,7 +69,7 @@ to follow the European standard. The European standard has the following beacon 
 The various values are defined in European standard as follows
 
     Beacon Comment – Service Code
-    features
+    **features**
     G/D Gate & Digi available
     -/D Digi only
     G/- Gate only
