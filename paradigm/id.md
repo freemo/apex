@@ -5,9 +5,9 @@ permalink: /paradigm/id/
 toc: false
 ---
 
-ID type packets arent well defined in the APRS standard, though many TNC and APRS software use the ID packet similarly, to identify the callsigns assigned various ports on the TNC. An ID packet can be differentiated from a beacon packet from the AX.25 "TO" field of the packet, which should be set to "ID".
+ID type packets are not well defined in the APRS standard, though many TNC and APRS software use the ID packet similarly, to identify the callsigns assigned various ports on the TNC. An ID packet can be differentiated from a beacon packet from the AX.25 "TO" field of the packet, which should be set to "ID".
 
-Lacking a pre-existing standard APEX borrowed and expanded on the formats currently in yes. The content of the ID packet consists of a space seperated list of all the callsign and path aliases with which the station can respond to, except cross-band aliases which are associated with the aliases associated with them directly. This is best explained with a real world example.
+Lacking a preexisting standard APEX borrowed and expanded on the formats currently in yes. The content of the ID packet consists of a space separated list of all the callsign and path aliases with which the station can respond to, except cross-band aliases which are associated with the aliases associated with them directly. This is best explained with a real world example.
 
     WI2ARD-1/30M1 WI2ARD-2/2M1 GATE/2M1 WIDEN-n
 
