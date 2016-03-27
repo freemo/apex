@@ -5,7 +5,7 @@ permalink: /paradigm/beacon/
 toc: false
 ---
 
-APEX Beacons follow the same format as an APRS beacon but with a few additions. First off, the position should always be encoded using mic-e compression. APEX clients can always natively interprit both plain text and mic-e but will transmit as mic-e for packet effiency and backwards-compatability.
+APEX Beacons follow the same format as an APRS beacon but with a few additions. First off, the position is prefered to be encoded using mic-e compression, however it may be encoded as plain text as well. APEX clients must always natively interprit both plain text and mic-e but may transmit either.
 
 APEX beacons should always include the PHG designator even for mobile stations. This is critical for APEX to calculate packet routing so if it is ommited the packet will not be considered APEX compliant. The PHG specification was documented in the original APRS specification as the following.
 
@@ -46,23 +46,10 @@ APEX beacons should always include the PHG designator even for mobile stations. 
      and find that the average elevation is 1200 feet, then your
      height-above-averag-terain is less than ZERO!!!!
 
-Obviously for a mobile station some of the fields, such as height omni, are usually 0. Also for full APEX compliance a few extra dynamic fields are added to the end of the PHG specifier. A tilde acts as a seperator and designator followed by two digits which represent the average number of packets per minute received since the last beacon. This information will be used by the APEX routing system to automatically route packets around high congestion stations.
-
-The APEX beacon format now looks something like this:
-
-    !..................#PHG5360/WIDE~23...(identifying comments)...
-                       | | ||||  |  | |__ avg. packets received per minute
-                       | | ||||  |  |____ apex specific seperator
-                       | | ||||  |_______ makes station show up green
-                       | | ||||__________ Omni (Direction of max gain)
-                       | | |||___________ Ant gain in dB
-                       | | ||____________ Height = log2(HAAT/10)
-                       | | |_____________ Power = SQR(P)
-                       | |_______________ Power-Height-Gain identifier *
-                       |_________________ # is symbol for digipeater
+Obviously for a mobile station some of the fields, such as height omni, are usually 0.
 
 The standard also dictates the content of the identifying comments, which are no longer free form. The current suggestion is
-to follow the European standard. The European standard has the following beacon comment format.
+to follow the European standard, with some small modifications. The European standard has the following beacon comment format.
 
     G/D R-I-R 24H
     
@@ -86,7 +73,7 @@ The various values are defined in European standard as follows
     HX variable times / on request
     HN night times 
     
-The additions to the european standard defined by APEX includes a connectivity of "I-R" to specify stations which will port internet packets over the radio but will not gate traffic into the internet.
+The additions to the european standard defined by APEX includes a connectivity of "I-R" to specify stations which will port internet packets over the radio but will not gate traffic into the internet. It also adds an additional field at the end in the form of C## which specifies the rate at which packets were received since the last beacon was sent out. The rate is in average packets per minute.
 
 The new APEX standard for the beacon comment would, therefore, be the following.
 
@@ -106,11 +93,18 @@ The new APEX standard for the beacon comment would, therefore, be the following.
     ----time table----
     H24 24 hours operation
     H12 except night hours
-    HX variable times / on request
-    HN night time operation only
+    HX  variable times / on request
+    HN  night time operation only
+    
+    ----congestion level----
+    C## congestion level, ## is aveage packets per minute
+    
+Therefore the beacon comment on an APEX compliant beacon packet looks like the following
 
-The following is an examples of a compliant APEX beacon:
+    G/D R-I-R H24 C30
+    
+The following is an examples of a complete compliant APEX beacon including PHG specifier and coordinates:
 
-    !/:=i@;N.G&PHG5360/WIDE~23 --G/D R-I-R H24
+    !/:=i@;N.G& --PHG5360/WIDE G/D R-I-R H24 C30
     
 **NOTE:** The beacon on every port of a TNC should always be the same.
