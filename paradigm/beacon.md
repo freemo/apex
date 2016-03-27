@@ -111,6 +111,6 @@ The new APEX standard for the beacon comment would, therefore, be the following.
 
 The following is an examples of a compliant APEX beacon:
 
-    !/:=i@;N.G& --G/D R-I-R H24
+    !/:=i@;N.G&PHG5360/WIDE~23 --G/D R-I-R H24
     
 **NOTE:** The beacon on every port of a TNC should always be the same.
