@@ -73,7 +73,7 @@ The various values are defined in European standard as follows
     HX variable times / on request
     HN night times 
     
-The additions to the european standard defined by APEX includes a connectivity of "I-R" to specify stations which will port internet packets over the radio but will not gate traffic into the internet. It also adds an additional field at the end in the form of C## which specifies the rate at which packets were received since the last beacon was sent out. The rate is in average packets per minute.
+The additions to the european standard defined by APEX includes a connectivity of "I-R" to specify stations which will port internet packets over the radio but will not gate traffic into the internet. It also adds an additional field at the end in the form of C## which specifies the rate at which packets were received since the last beacon was sent out. The rate is in average packets per minute. This information is used to assist the APEX routing algorithms to automatically route packets around areas of high congestion.
 
 The new APEX standard for the beacon comment would, therefore, be the following.
 
