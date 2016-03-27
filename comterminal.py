@@ -43,12 +43,14 @@ for section in config.sections():
             port_net = config.get(port_section, 'net')
             tnc_port = int(config.get(port_section, 'tnc_port'))
             port_map[port_name] = {'identifier':port_identifier, 'net':port_net, 'tnc':kiss_tnc, 'tnc_port':tnc_port}
-aprsis_callsign = config.get('APRS-IS', 'callsign')
-aprsis_password = config.get('APRS-IS', 'password')
-aprsis_server = config.get('APRS-IS', 'server')
-aprsis_server_port = config.get('APRS-IS', 'server_port')
-aprsis = aprs.AprsInternetService(aprsis_callsign, aprsis_password)
-aprsis.connect(aprsis_server, int(aprsis_server_port))
+    elif section == "APRS-IS":
+        aprsis_callsign = config.get('APRS-IS', 'callsign')
+        aprsis_password = config.get('APRS-IS', 'password')
+        aprsis_server = config.get('APRS-IS', 'server')
+        aprsis_server_port = config.get('APRS-IS', 'server_port')
+        aprsis = aprs.AprsInternetService(aprsis_callsign, aprsis_password)
+        aprsis.connect(aprsis_server, int(aprsis_server_port))
+
 packet_cache = cachetools.TTLCache(10000, 5)
 
 def sigint_handler(signal, frame):
