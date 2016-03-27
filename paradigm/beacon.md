@@ -101,7 +101,7 @@ The APEX standard for the beacon comment would, therefore, be the following.
     ----congestion level----
     C## congestion level, ## is aveage packets per minute
     
-According to the APEX standard the beacon comment on an APEX compliant beacon packet would looks like the following
+According to the APEX standard the beacon comment on an APEX compliant beacon packet would look something like this:
 
     G/D R-I-R H24 C30
     
