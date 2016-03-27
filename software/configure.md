@@ -17,7 +17,7 @@ The sample configuration should be something like the following.
     byte_size=8
     port_count=1
     kiss_init=MODE_INIT_KENWOOD_D710
-
+    
     [TNC RPR]
     com_port=/dev/ttyUSB0
     baud=38400
@@ -26,29 +26,29 @@ The sample configuration should be something like the following.
     byte_Size=8
     port_count=1
     kiss_init=MODE_INIT_W8DED
-
+    
     [PORT KENWOOD-1]
-    identifier=WI2ARD-2
+    identifier=WI2ARD-1
     net=2M1
     tnc_port=0
     beacon_path=WIDE1-1,WIDE2-2
     status_path=WIDE1-1,WIDE2-2
-    beacon_text=!/:=i@;N.G& --G/D R-I-R H24
+    beacon_text=!/:=i@;N.G& --PHG5790/G/D R-I-R H24 C30
     status_text=>Listening on 146.52Mhz http://JeffreyFreeman.me
     id_text=WI2ARD/30M1 GATE/2M1 WI2ARD-1/2M1 WIDEN-n IGATE
     id_path=WIDE1-1,WIDE2-2
-
+    
     [PORT RPR-1]
-    identifier=WI2ARD-1
+    identifier=WI2ARD
     net=30M1
     tnc_port=0
     beacon_path=WIDE1-1
     status_path=WIDE1-1
-    beacon_text=!/:=i@;N.G& --G/D R-I-R H24
+    beacon_text=!/:=i@;N.G& --PHG5210/G/D R-I-R H24 C1
     status_text=>Robust Packet Radio http://JeffreyFreeman.me
     id_text=WI2ARD/30M1 GATE/2M1 WI2ARD-1/2M1 WIDEN-n IGATE
     id_path=WIDE1-1
-
+    
     [APRS-IS]
     callsign=WI2ARD
     password=12345
