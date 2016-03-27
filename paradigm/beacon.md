@@ -69,20 +69,42 @@ to follow the European standard. The European standard has the following beacon 
 The various values are defined in European standard as follows
 
     Beacon Comment – Service Code
-    **features**
+    
+    ----features----
     G/D Gate & Digi available
     -/D Digi only
     G/- Gate only
 
-    connectivity
+    ----connectivity----
     R-I-R Radio Internet Radio connection
     R-I Radio Internet only
     R Radio only / no internet i.e. Digi/p
 
-    time table
+    ----time table----
     H24 24 hours operation
     H12 except night hours
     HX variable times / on request
     HN night times 
     
-The additions to the european standard defined by APEX includes a connectivity of "I-R" to specify stations which will port internet packets over the radio but will not gate traffic into the internet. Also the addition of a "HD" time table specifier to indicate day time only operation.
+The additions to the european standard defined by APEX includes a connectivity of "I-R" to specify stations which will port internet packets over the radio but will not gate traffic into the internet.
+
+The new APEX standard for the beacon comment would, therefore, be the following.
+
+    Beacon Comment – Service Code
+    
+    ----features----
+    G/D Gate & Digi available
+    -/D Digipeater only
+    G/- Internet Gate only
+
+    ----connectivity----
+    R-I-R Bidirection traffic between radio and internet gateway
+    R-I Radio traffic reported to internet only.
+    I-R Internet traffic emited into radio network only.
+    R Radio only / no internet
+
+    ----time table----
+    H24 24 hours operation
+    H12 except night hours
+    HX variable times / on request
+    HN night time operation only
