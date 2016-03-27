@@ -84,6 +84,7 @@ The APEX standard for the beacon comment would, therefore, be the following.
     G/D Gate & Digi available
     -/D Digipeater only
     G/- Internet Gate only
+    -/- Neither a gate, nor a digipeater
 
     ----connectivity----
     R-I-R Bidirection traffic between radio and internet gateway
