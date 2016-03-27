@@ -53,7 +53,7 @@ to follow the European standard, with some small modifications. The European sta
 
     G/D R-I-R 24H
     
-The various values are defined in European standard as follows
+The various fields are defined in the European standard as follows
 
     Beacon Comment – Service Code
     
