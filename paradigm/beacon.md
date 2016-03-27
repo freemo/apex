@@ -48,7 +48,7 @@ APEX beacons should always include the PHG designator even for mobile stations. 
 
 Obviously for a mobile station some of the fields, such as height omni, are usually 0. Also for full APEX compliance a few extra dynamic fields are added to the end of the PHG specifier. A tilde acts as a seperator and designator followed by two digits which represent the average number of packets per minute received since the last beacon. This information will be used by the APEX routing system to automatically route packets around high congestion stations.
 
-The resulting beacon format now looks something like this:
+The APEX beacon format now looks something like this:
 
     !..................#PHG5360/WIDE~23...(identifying comments)...
                        | | ||||  |  | |__ avg. packets received per minute
@@ -108,3 +108,9 @@ The new APEX standard for the beacon comment would, therefore, be the following.
     H12 except night hours
     HX variable times / on request
     HN night time operation only
+
+The following is an examples of a compliant APEX beacon:
+
+    !/:=i@;N.G& --G/D R-I-R H24
+    
+**NOTE:** The beacon on every port of a TNC should always be the same.
