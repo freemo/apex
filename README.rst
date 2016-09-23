@@ -227,3 +227,8 @@ Releasing
 
 * Edit the release on `GitHub <https://github.com/Syncleus/apex/releases>`_ . Paste the release notes into the
   release's release page, and come up with a title for the release.
+
+
+.. image:: https://badges.gitter.im/Syncleus/APEX.svg
+   :alt: Join the chat at https://gitter.im/Syncleus/APEX
+   :target: https://gitter.im/Syncleus/APEX?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
