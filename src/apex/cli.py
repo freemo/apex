@@ -142,9 +142,7 @@ def configure(configfile, verbose=False):
                 return False
 
             if not config.has_option(section, 'kiss_init'):
-                click.echo(click.style('Error: ', fg='red', bold=True, blink=True) +
-                           click.style("""Invalid configuration, must have kiss_init set in TNC sections of
-                           configuration file""", bold=True))
+                echo_colorized_error('Invalid configuration, must have kiss_init set in TNC sections of configuration file')
                 return False
             kiss_init_string = config.get(section, 'kiss_init')
             if kiss_init_string == 'MODE_INIT_W8DED':
