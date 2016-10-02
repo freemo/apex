@@ -25,7 +25,7 @@ project = u'APEX'
 year = '2016'
 author = u'Jeffrey Phillips Freeman (WI2ARD)'
 copyright = '{0}, {1}'.format(year, author)
-version = release = u'0.0.5'
+version = release = u'0.0.6'
 
 pygments_style = 'trac'
 templates_path = ['.']
