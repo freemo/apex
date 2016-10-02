@@ -3,7 +3,7 @@
 
 """APRS KISS Class Definitions"""
 
-# These imports are for python3 compatability inside python2
+# These imports are for python3 compatibility inside python2
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -21,7 +21,7 @@ __copyright__ = 'Copyright 2016, Syncleus, Inc. and contributors'
 __credits__ = []
 
 
-class Aprs(object):
+class AprsKiss(object):
 
     """APRS interface."""
 
@@ -53,13 +53,29 @@ class Aprs(object):
                     if 1 < i < 11:
                         if raw_frame[raw_slice + 1] & 0x03 is 0x03 and raw_frame[raw_slice + 2] in [0xf0, 0xcf]:
                             frame['text'] = ''.join(map(chr, raw_frame[raw_slice + 3:]))
-                            frame['destination'] = Aprs.__identity_as_string(Aprs.__extract_callsign(raw_frame))
-                            frame['source'] = Aprs.__identity_as_string(Aprs.__extract_callsign(raw_frame[7:]))
-                            frame['path'] = Aprs.__extract_path(int(i), raw_frame)
+                            frame['destination'] = AprsKiss.__identity_as_string(AprsKiss.__extract_callsign(raw_frame))
+                            frame['source'] = AprsKiss.__identity_as_string(AprsKiss.__extract_callsign(raw_frame[7:]))
+                            frame['path'] = AprsKiss.__extract_path(int(i), raw_frame)
                             return frame
 
         logging.debug('frame=%s', frame)
         return frame
+
+    @staticmethod
+    def __valid_frame(raw_frame):
+        logging.debug('raw_frame=%s', raw_frame)
+        frame_len = len(raw_frame)
+
+        if frame_len > 16:
+            for raw_slice in range(0, frame_len - 2):
+                # Is address field length correct?
+                if raw_frame[raw_slice] & 0x01 and ((raw_slice + 1) % 7) == 0:
+                    i = (raw_slice + 1) / 7
+                    # Less than 2 callsigns?
+                    if 1 < i < 11:
+                        if raw_frame[raw_slice + 1] & 0x03 is 0x03 and raw_frame[raw_slice + 2] in [0xf0, 0xcf]:
+                            return True
+        return False
 
     @staticmethod
     def __extract_path(start, raw_frame):
@@ -74,7 +90,7 @@ class Aprs(object):
         full_path = []
 
         for i in range(2, start):
-            path = Aprs.__identity_as_string(Aprs.__extract_callsign(raw_frame[i * 7:]))
+            path = AprsKiss.__identity_as_string(AprsKiss.__extract_callsign(raw_frame[i * 7:]))
             if path:
                 if raw_frame[i * 7 + 6] & 0x80:
                     full_path.append(''.join([path, '*']))
@@ -122,12 +138,13 @@ class Aprs(object):
         :return: KISS-encoded APRS frame.
         :rtype: list
         """
-        enc_frame = Aprs.__encode_callsign(Aprs.__parse_identity_string(frame['destination'])) + \
-            Aprs.__encode_callsign(Aprs.__parse_identity_string(frame['source']))
+        enc_frame = AprsKiss.__encode_callsign(AprsKiss.__parse_identity_string(frame['destination'])) + \
+            AprsKiss.__encode_callsign(AprsKiss.__parse_identity_string(frame['source']))
         for p in frame['path']:
-            enc_frame += Aprs.__encode_callsign(Aprs.__parse_identity_string(p))
+            enc_frame += AprsKiss.__encode_callsign(AprsKiss.__parse_identity_string(p))
 
-        return enc_frame[:-1] + [enc_frame[-1] | 0x01] + [apex.kiss.constants.SLOT_TIME] + [0xf0] + [ord(c) for c in frame['text']]
+        return enc_frame[:-1] + [enc_frame[-1] | 0x01] + [apex.kiss.constants.SLOT_TIME] + [0xf0]\
+            + [ord(c) for c in frame['text']]
 
     @staticmethod
     def __encode_callsign(callsign):
@@ -191,8 +208,9 @@ class Aprs(object):
         :type frame: dict
         """
         with self.lock:
-            encoded_frame = Aprs.__encode_frame(frame)
-            self.data_stream.write(encoded_frame, *args, **kwargs)
+            encoded_frame = AprsKiss.__encode_frame(frame)
+            if AprsKiss.__valid_frame(encoded_frame):
+                self.data_stream.write(encoded_frame, *args, **kwargs)
 
     def read(self, *args, **kwargs):
         """Reads APRS-encoded frame from KISS device.
@@ -200,6 +218,6 @@ class Aprs(object):
         with self.lock:
             frame = self.data_stream.read(*args, **kwargs)
             if frame is not None and len(frame):
-                return Aprs.__decode_frame(frame)
+                return AprsKiss.__decode_frame(frame)
             else:
                 return None

@@ -3,7 +3,7 @@
 
 """KISS Core Classes."""
 
-# These imports are for python3 compatability inside python2
+# These imports are for python3 compatibility inside python2
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -37,8 +37,6 @@ class KissSerial(Kiss):
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
     logger.propagate = False
-
-    frame_buffer = []
 
     def __init__(self, strip_df_start=True,
                  com_port=None,
@@ -94,17 +92,14 @@ class KissSerial(Kiss):
         if mode_init is not None:
             self.serial.write(mode_init)
             self.exit_kiss = True
+        else:
+            self.exit_kiss = False
 
         # Previous verious defaulted to Xastir-friendly configs. Unfortunately
         # those don't work with Bluetooth TNCs, so we're reverting to None.
         if kwargs:
             for name, value in kwargs.items():
                 super(KissSerial, self)._write_setting(name, value)
-
-        # If no settings specified, default to config values similar
-        # to those that ship with Xastir.
-        # if not kwargs:
-        #    kwargs = kiss.constants.DEFAULT_KISS_CONFIG_VALUES
 
     def close(self):
         super(KissSerial, self).close()

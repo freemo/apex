@@ -3,7 +3,7 @@
 
 """KISS Core Classes."""
 
-# These imports are for python3 compatability inside python2
+# These imports are for python3 compatibility inside python2
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -35,8 +35,6 @@ class KissTcp(Kiss):
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
     logger.propagate = False
-
-    frame_buffer = []
 
     def __init__(self,
                  strip_df_start=True,

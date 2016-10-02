@@ -131,11 +131,11 @@ def configure(configfile, verbose=False):
             if config.has_option(section, 'com_port') and config.has_option(section, 'baud'):
                 com_port = config.get(section, 'com_port')
                 baud = config.get(section, 'baud')
-                kiss_tnc = apex.buffers.ReconnectingPacketBuffer(apex.aprs.Aprs(apex.kiss.KissSerial(com_port=com_port, baud=baud)))
+                kiss_tnc = apex.buffers.ReconnectingPacketBuffer(apex.aprs.AprsKiss(apex.kiss.KissSerial(com_port=com_port, baud=baud)))
             elif config.has_option(section, 'tcp_host') and config.has_option(section, 'tcp_port'):
                 tcp_host = config.get(section, 'tcp_host')
                 tcp_port = config.get(section, 'tcp_port')
-                kiss_tnc = apex.buffers.ReconnectingPacketBuffer(apex.aprs.Aprs(apex.kiss.KissTcp(host=tcp_host, tcp_port=tcp_port)))
+                kiss_tnc = apex.buffers.ReconnectingPacketBuffer(apex.aprs.AprsKiss(apex.kiss.KissTcp(host=tcp_host, tcp_port=tcp_port)))
             else:
                 echo_colorized_error("""Invalid configuration, must have both com_port and baud set or tcp_host and
                            tcp_port set in TNC sections of configuration file""")

@@ -3,7 +3,7 @@
 
 """KISS Core Classes."""
 
-# These imports are for python3 compatability inside python2
+# These imports are for python3 compatibility inside python2
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -139,10 +139,10 @@ class Kiss(with_metaclass(ABCMeta, object)):
             value = chr(value)
 
         return self._write_interface(
-            kiss_constants.FEND +
-            getattr(kiss_constants, name.upper()) +
-            Kiss.__escape_special_codes(value) +
-            kiss_constants.FEND
+            [kiss_constants.FEND] +
+            [getattr(kiss_constants, name.upper())] +
+            [Kiss.__escape_special_codes(value)] +
+            [kiss_constants.FEND]
         )
 
     def __fill_buffer(self):
