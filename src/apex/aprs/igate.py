@@ -129,7 +129,7 @@ class IGate(object):
             selected = select.select([self.aprsis_sock], [], [], 0)
             if len(selected[0]) > 0:
                 recvd_data = self.aprsis_sock.recv(aprs_constants.RECV_BUFFER)
-                if not recvd_data:
+                if recvd_data:
                     self.data_buffer += recvd_data
                 else:
                     read_more = False
