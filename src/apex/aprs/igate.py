@@ -76,7 +76,7 @@ class IGate(object):
             self.aprsis_sock.connect((server, port))
             self.logger.info('Connected to server=%s port=%s', server, port)
             self.logger.debug('Sending full_auth=%s', self.full_auth)
-            self.aprsis_sock.sendall((self.full_auth + '\n\r').encode('ascii'))
+            self.aprsis_sock.sendall([ord(c) for c in (self.full_auth + '\n\r')])
 
     def close(self):
         if self.aprsis_sock:
@@ -100,7 +100,7 @@ class IGate(object):
 
         frame = aprs_util.encode_frame(frame_decoded)
         if 'TCP' in protocol:
-            self.aprsis_sock.sendall(frame.encode(encoding='UTF-8'))
+            self.aprsis_sock.sendall([ord(c) for c in frame])
             return True
         elif 'HTTP' in protocol:
             content = '\n'.join([self._auth, frame])

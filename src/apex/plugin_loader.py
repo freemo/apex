@@ -15,7 +15,6 @@ __license__ = 'Apache License, Version 2.0'
 __copyright__ = 'Copyright 2016, Syncleus, Inc. and contributors'
 __credits__ = []
 
-PluginFolder = './plugins'
 MainModule = '__init__'
 
 plugin_modules = ['apex.plugins.apexparadigm',
