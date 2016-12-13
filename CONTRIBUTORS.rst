@@ -1,4 +1,5 @@
 * Jeffrey Phillips Freeman (WI2ARD) - http://JeffreyFreeman.me
+* Greg Albrecht W2GMD <oss@undef.net>
 * Martin Murray (KD8LVZ)
 * Paul McMillan - https://github.com/PaulMcMillan
 * Russ Innes
